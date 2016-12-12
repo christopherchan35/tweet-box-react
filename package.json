@@ -1,0 +1,27 @@
+{
+  "name": "tweet-box-react",
+  "version": "1.0.0",
+  "description": "## Following tutorial located [here](http://reactfordesigners.com/labs/reactjs-introduction-for-people-who-know-just-enough-jquery-to-get-by/)",
+  "main": "application.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christopherchan35/tweet-box-react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christopherchan35/tweet-box-react/issues"
+  },
+  "homepage": "https://github.com/christopherchan35/tweet-box-react#readme",
+  "dependencies": {
+    "babel-standalone": "^6.19.0",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  },
+  "devDependencies": {
+    "babel-preset-latest": "^6.16.0"
+  }
+}
