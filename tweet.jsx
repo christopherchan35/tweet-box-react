@@ -1,7 +1,8 @@
 var TweetBox = React.createClass({
   getInitialState: function() {
     return {
-      text: ""
+      text: "",
+      photoAdded: false
     };
   },
   handleChange: function(event){
