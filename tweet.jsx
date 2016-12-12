@@ -25,7 +25,7 @@ var TweetBox = React.createClass({
                   onChange={this.handleChange}></textarea>
         <br/>
         <span>{ this.remainingCharacters() }</span>
-        <button className="btn btn-primary pull-right"           disabled={this.state.text.length === 0}>Tweet</button>
+        <button className="btn btn-primary pull-right"           disabled={this.remainingCharacters() === 140}>Tweet</button>
         <button className="btn btn-default pull-right"
           onClick={this.togglePhoto}>
           {this.state.photoAdded ? "✓ Photo Added" : "Add Photo"}
