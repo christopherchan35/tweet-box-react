@@ -2,20 +2,18 @@
 <html>
   <head>
     <!-- jQuery -->
-    <!-- <script src="https://code.jquery.com/jquery.min.js"></script>
-    <script src="application.jsx"></script> -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
 
     <!-- Bootstrap CSS -->
-    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
-
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
      <!-- React -->
-     <!-- <script src="https://fb.me/react-15.1.0.js"></script>
+     <script src="https://fb.me/react-15.1.0.js"></script>
      <script src="https://fb.me/react-dom-15.1.0.js"></script>
-     <script type="text/babel" src="application.jsx"></script>
+     <script type="text/babel" src="random-message.jsx"></script>
 
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script> -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
 
     <meta charset="utf-8">
     <title>Tweet Box</title>
@@ -23,43 +21,5 @@
   <body>
     <div id="greeting-div"></div>
 
-    <script src="https://fb.me/react-15.0.0.js"></script>
-    <script src="https://fb.me/react-dom-15.0.0.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
-    <script type="text/babel">
-    var RandomMessage = React.createClass({
-      getInitialState: function() {
-        return { message: 'Hello, Universe' };
-      },
-      onClick: function() {
-        var messages = ['Hello, World', 'Hello, Planet', 'Hello, Universe'];
-        var randomMessage = messages[Math.floor((Math.random() * 3))];
-
-        this.setState({ message: randomMessage });
-      },
-      render: function() {
-        return (
-          <div>
-          <MessageView message={ this.state.message }/>
-          <p><input type="button" onClick={ this.onClick } value="Change Message"/></p>
-          </div>
-        );
-      }
-    });
-
-    var MessageView = React.createClass({
-      render: function() {
-        return (
-          <p>{ this.props.message }</p>
-        );
-      }
-    });
-
-    ReactDOM.render(
-      <RandomMessage />,
-      document.getElementById('greeting-div')
-    );
-    </script>
-    <!-- <div id="container"></div> -->
   </body>
 </html>
