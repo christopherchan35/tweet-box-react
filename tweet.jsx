@@ -20,9 +20,13 @@ var TweetBox = React.createClass({
   },
   overflowAlert: function() {
     if (this.remainingCharacters() < 0) {
+      var beforeOverflowText = this.state.text.substring(140 - 10, 140);
+      var overflowText = this.state.text.substring(140);
       return (
         <div className="alert alert-warning">
           <strong>Oops! Too Long:</strong>
+          &nbsp;...{beforeOverflowText}
+          <strong className="bg-danger">{overflowText}</strong>
         </div>
       );
     } else {
