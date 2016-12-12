@@ -1,11 +1,11 @@
 var TweetBox = React.createClass({
   getInitialState: function() {
     return {
-      text: ""  
+      text: ""
     };
   },
   handleChange: function(event){
-    console.log(event.target.value);
+    this.setState({ text: event.target.value });
   },
   render: function() {
     return (
