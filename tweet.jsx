@@ -11,13 +11,20 @@ var TweetBox = React.createClass({
   togglePhoto: function(event) {
     this.setState({ photoAdded: !this.state.photoAdded });
   },
+  remainingCharacters: function() {
+    if (this.state.photoAdded) {
+      return 140 - 23 - this.state.text.length;
+    } else {
+      return 140 - this.state.text.length;
+    }
+  },
   render: function() {
     return (
       <div className="well clearfix">
         <textarea className="form-control"
                   onChange={this.handleChange}></textarea>
         <br/>
-        <span>{140 - this.state.text.length}</span>
+        <span>{ this.remainingCharacters() }</span>
         <button className="btn btn-primary pull-right"           disabled={this.state.text.length === 0}>Tweet</button>
         <button className="btn btn-default pull-right"
           onClick={this.togglePhoto}>
