@@ -17,7 +17,11 @@
   },
   "homepage": "https://github.com/christopherchan35/tweet-box-react#readme",
   "dependencies": {
+    "babel-standalone": "^6.19.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1"
+  },
+  "devDependencies": {
+    "babel-preset-latest": "^6.16.0"
   }
 }
